@@ -1,0 +1,2 @@
+# staysync
+hotel management software
