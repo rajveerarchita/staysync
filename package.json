@@ -1,0 +1,19 @@
+{
+  "name": "hotel-management-system",
+  "version": "1.0.0",
+  "description": "Comprehensive hotel management software with reception, restaurant, administration, reporting, front office, and inventory management",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-deps": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["hotel", "management", "system", "pos", "inventory", "booking"],
+  "author": "Hotel Management System",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
